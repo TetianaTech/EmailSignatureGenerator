@@ -42,8 +42,9 @@ POST /api/signatures
     "logoUrl": string
   }
 }
+```
 
-2. Bulk Generate Signatures
+3. Bulk Generate Signatures
 ```http
 POST /api/signatures/bulk
 ```
@@ -58,32 +59,23 @@ POST /api/signatures/bulk
   }[];
   webhookUrl: string;
 }
-
+```
 
 ## Future Improvements
 The following features were considered in the initial design but were not implemented due to time constraints:
 
 ### Logo Upload
-Current implementation accepts image URLs only. Future enhancement would include direct file uploads via:
-  - Generating signed upload URLs
-  - Cloud storage integration (e.g., AWS S3)
-  - CDN delivery for optimized image serving
+Current implementation accepts image URLs only. Future enhancement would include direct file uploads via: generating signed upload URLs, cloud storage integration (e.g., AWS S3), CDN delivery for optimized image serving
 
 ### Template Management
-Migration of template metadata to a database solution to support:
-  - Scalable template management
-  - Pagination and infinite scroll
-  - External template administration
-  - Dynamic template updates
+Migration of template metadata to a database solution to support: scalable template management, pagination and infinite scroll, external template administration, dynamic template updates
 
 ### System Robustness
 - Enhanced error handling for asynchronous job processing
-- Comprehensive logging system for failed operations
-- Job status monitoring
-
+- Job status monitoring, logging for failed operations
 
 ### UI/UX Improvements
 - Loaders while request
+- Error messages
 - Reusable form component architecture
 - Enhanced field styling and validation
-- Erorr handling

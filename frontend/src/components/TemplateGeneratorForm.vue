@@ -15,6 +15,7 @@
         :required="field.required"
       />
     </div>
+    <p>*Sorry, I didn't have time to implement file upload, you can use this sample as logo url: https://picsum.photos/200/200</p>
     <button type="submit" class="btn btn-primary">Generate</button>
   </form>
 </template>
@@ -64,7 +65,7 @@ const formFields: FormField[] = [
     label: 'Logo URL',
     type: 'url',
     placeholder: 'Enter your logo URL',
-    required: false,
+    required: false
   }
 ];
 
@@ -82,6 +83,10 @@ const submitForm = () => {
   &__field {
     display: grid;
     grid-template-columns: 8rem 1fr;
+  }
+
+  &__hint {
+    grid-column: span(1, 2);
   }
 }
 </style>
