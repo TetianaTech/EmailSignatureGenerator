@@ -1,0 +1,17 @@
+{
+  "name": "signature-generator-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "pnpm --parallel run dev",
+    "build": "pnpm --sequential run build",
+    "test": "pnpm --parallel run test"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

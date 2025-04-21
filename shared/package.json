@@ -1,0 +1,11 @@
+{
+  "name": "@signature-generator/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "dev": "tsc --watch"
+  }
+}

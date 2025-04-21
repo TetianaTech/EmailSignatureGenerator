@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "_variables" as *;
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $font-family;
+  font-size: map.get($font-sizes, 'base');
+  color: map.get($colors, 'text-primary');
+  background-color: map.get($colors, 'page-bg');
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "fileName": "minimal.hbs",
+    "name": "Minimal",
+    "description": "Clean, horizontal layout with emoji icons",
+    "fields": ["fullName", "email", "phone", "logoUrl"],
+    "previewUrl": "assets/template-previews/minimal.jpeg"
+  },
+  {
+    "fileName": "professional.hbs",
+    "name": "Professional",
+    "description": "Elegant design with vertical accent line",
+    "fields": ["fullName", "email", "phone", "logoUrl"],
+    "previewUrl": "assets/template-previews/professional.jpeg"
+  },
+  {
+    "fileName": "corporate.hbs",
+    "name": "Corporate",
+    "description": "Traditional vertical stacked layout",
+    "fields": ["fullName", "email", "phone", "logoUrl"],
+    "previewUrl": "assets/template-previews/corporate.jpeg"
+  }
+]

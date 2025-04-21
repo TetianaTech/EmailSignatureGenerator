@@ -1,0 +1,27 @@
+@use "sass:map";
+@use "_variables" as *;
+
+@mixin respond-down($breakpoint) {
+  $value: map.get($breakpoints, $breakpoint);
+
+  @if $value {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "No value found for breakpoint: `#{$breakpoint}`.";
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin card {
+  background: map.get($colors, 'container-bg');
+  border-radius: map.get($radius, 'md');
+  box-shadow: map.get($box-shadow, 'md');
+  padding: map.get($spacing, 'md');
+}
